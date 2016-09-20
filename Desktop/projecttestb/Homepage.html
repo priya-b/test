@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title></title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+</head>
+<img src="blr-street-food-logo.png" alt="heading" width="200px" height="100px">
+<style>
+li {
+    display: inline;
+    float: right;
+}
+
+  h2.section {
+    color: blue;
+}
+h2.section2 {
+  color: blue;
+}
+h2.section3 {
+  color: blue;
+}
+</style>
+
+ <div id="w">
+    <div id="content">
+      <nav id="stickynav">
+        <ul>
+  <li><a href="#about" target="_blank">About</a></li>
+  <li><a href="#register" target="_blank">Register</a></li>
+</ul>
+
+      </nav>
+
+<h2 class="food"></h2>
+
+<div class="street food" style="max-width:500px">
+  <img class="mySlides" src="slider1.jpg" style="width:200%">
+  <img class="mySlides" src="slider2.jpg" style="width:200%">
+  <img class="mySlides" src="slider4.jpg" style="width:200%">
+  <img class="mySlides" src="slider5.jpg" style="width:200%">
+  <img class="mySlides" src="slider6.jpg" style="width:200%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+
+</script>
+ <section id="#default" class="section">
+      <h2>Indiranagar</h2> 
+    </section>
+     <section id="#default1" class="section2">
+      <h2>VV Puram</h2>
+    </section>
+     <section id="#default2" class="section3">
+      <h2>Koramangla</h2>
+    </section>
+ <footer>
+ <div id="w2">
+    <div id="content2">
+      <nav id="stickynav">
+        <ul>
+  <li><a href="" target="_blank"></a>Home</li>
+  <li><a href="" target="_blank"></a>About</li>
+  <li><a href="" target="_blank"></a>Speaking</li>
+  <li><a href="" target="_blank"></a>Sponsers</li>
+  <li><a href="" target="_blank"></a>Contact</li>
+  
+</ul>
+
+      </nav>
+      
+    </footer>
+
+
+</body>
+</html>
+
